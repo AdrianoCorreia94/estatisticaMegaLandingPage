@@ -85,10 +85,34 @@
 
             <p class="mb-4 text-lg">Receba seu relatório completo em PDF personalizado com base na dezena que você
                 escolher.</p>
-            <a href="https://pay.hotmart.com/M100224198O" target="_blank"
+
+
+            <!-- LINK HOTMART -->
+            <script type="text/javascript">
+                function importHotmart() {
+                    var imported = document.createElement('script');
+                    imported.src = 'https://static.hotmart.com/checkout/widget.min.js';
+                    document.head.appendChild(imported);
+                    var link = document.createElement('link');
+                    link.rel = 'stylesheet';
+                    link.type = 'text/css';
+                    link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css';
+                    document.head.appendChild(link);
+                }
+                importHotmart(); 
+            </script>
+            <a onclick="return false;" href="https://pay.hotmart.com/M100224198O?checkoutMode=2"
+                class="hotmart-fb hotmart__button-checkout"><img
+                    src='https://static.hotmart.com/img/btn-buy-green.png'></a>
+            <!--
+                <a href="https://pay.hotmart.com/M100224198O" target="_blank"
                 class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-200">
                 Comprar Agora na Hotmart
             </a>
+        -->
+
+
+
             <p class="text-sm text-red-600 mt-2 font-semibold">⏳ Oferta válida por tempo limitado!<br>valor por dezena
             </p>
         </section>
